@@ -28,7 +28,10 @@ class FileStorage():
         with open(FileStorage.__file_path, "w") as file:
             for key,value in FileStorage.__objects.items():
                 if isinstance(value, str):
-                    value = ast.literal_eval(value[value.find('{'):])
+                    try:
+                        value = ast.literal_eval(value[value.find('{'):])
+                    except(SyntaxError, ValueError):
+                        return None
                     FileStorage.__objects[key] = value
             json.dump(FileStorage.__objects, file, default= FileStorage.to_str, indent=4)
     
@@ -40,6 +43,8 @@ class FileStorage():
                     cls_id = key.split(".")
                     cls = cls_id[0]
                     id = cls_id[1]
+                    value['created_at'] = str(datetime.fromisoformat(value['created_at']))
+                    value['updated_at'] = str(datetime.fromisoformat(value['updated_at']))
                     FileStorage.__objects[key] = f"[{cls}] ({id}) " + str(value)
         else:
             return 
