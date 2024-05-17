@@ -2,7 +2,9 @@ from models.base_model import BaseModel
 import os, json
 file_path = "file.json"
 classes = {
-    "BaseModel": BaseModel
+    "BaseModel": "dhasjdhjas",
+    "dashdkas": 312312,
+    "jdkladjklsa": {"hdjad":"gdjagdas"}
 }
 
 if os.path.isfile(file_path) and file_path.endswith(".json"):
@@ -15,5 +17,15 @@ def func(cls,  id:str):
     print(str(id))
     joined_string = f"{cls}.{id}"
     print(joined_string)
+my_list = []
+my_list.append(classes)
+my_list.append("Amazing")
 
-func("Class", 2310-31231-31)
+if ['']:
+       print("True")
+else: 
+      print("False")
+
+
+
+
