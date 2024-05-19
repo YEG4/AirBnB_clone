@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Console 
+"""Console
 """
 import cmd
 import json
