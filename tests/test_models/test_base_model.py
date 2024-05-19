@@ -1,3 +1,5 @@
+"""Tests use cases  for the class BaseModel
+"""
 import unittest
 from models.base_model import BaseModel
 
