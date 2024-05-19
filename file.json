@@ -22,18 +22,9 @@
         "created_at": "2024-05-15 17:13:41.302492",
         "updated_at": "2024-05-15 17:13:41.302505",
         "__class__": "User",
-        "first_name": "\"Ahmed\"",
+        "first_name": "Ahmed",
         "last_name": "Bar",
         "email": "airbnb@mail.com",
-        "password": "root"
-    },
-    "User.c2da61fe-bdb3-4c1a-83f1-9e52b154f988": {
-        "id": "c2da61fe-bdb3-4c1a-83f1-9e52b154f988",
-        "created_at": "2024-05-15 17:13:41.303011",
-        "updated_at": "2024-05-15 17:13:41.303022",
-        "__class__": "User",
-        "first_name": "John",
-        "email": "airbnb2@mail.com",
         "password": "root"
     },
     "User.c5e23061-c2d1-4d3d-b0a3-1fc3d650fcff": {
