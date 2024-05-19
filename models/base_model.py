@@ -28,7 +28,7 @@ class BaseModel():
 
     def __str__(self):
         """This method returns the representation of an instance when used
-        in a print statement
+in a print statement
 
         Returns:
             fstring: Modelname + id + dict of it's attributes
@@ -37,15 +37,14 @@ class BaseModel():
 
     def save(self):
         """This method updates the time when it was last edited and saves
-        the instance in a json file
+the instance in a json file
         """
         self.updated_at = datetime.now()
         storage.save()
 
     def to_dict(self):
         """This method convert the instance.__dict__ into a dict with an
-        added attribute
-        and modified the created_at and updated_at attribute
+added attribute and modified the created_at and updated_at attribute
 
         Returns:
             dict: a dictionary of all the attribute of that instance
