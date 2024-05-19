@@ -29,12 +29,6 @@ class HBNBCommand(cmd.Cmd):
     def emptyline(self):
         pass
 
-    def onecmd(self, line):
-
-        # classname, function_name = line.split(".")
-        print(line)
-        return True
-
     def do_quit(self, line):
         '''Quit command to exit the program\n'''
         return True
