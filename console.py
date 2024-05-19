@@ -38,6 +38,8 @@ class HBNBCommand(cmd.Cmd):
         return True
 
     def do_create(self, cls):
+        """creates new instances
+        """
         if cls:
             if cls in self.classes:
                 instance = self.classes[cls]()
@@ -49,6 +51,11 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
 
     def do_all(self, line):
+        """lists all class instances stored in a json file
+
+        Args:
+            line (string): command line arguements
+        """
         if line:
             if line in self.classes:
                 if os.path.isfile(self.path) and self.path.endswith(".json"):
@@ -76,6 +83,11 @@ class HBNBCommand(cmd.Cmd):
                     print(my_list)
 
     def do_update(self, line):
+        """updates an instance of a class and saves it to a json file
+
+        Args:
+            line (string): command line arguements
+        """
         if os.path.isfile(self.path) and self.path.endswith(".json"):
             with open(self.path, "r") as file:
                 instances = json.load(file)
@@ -126,6 +138,11 @@ class HBNBCommand(cmd.Cmd):
                 print("** no instance found **")
 
     def do_show(self, line):
+        """lists specific class instances
+
+        Args:
+            line (string): command line arguements
+        """
         if os.path.isfile(self.path) and self.path.endswith(".json"):
             with open(self.path, "r") as file:
                 instances = json.load(file)
@@ -157,6 +174,11 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
 
     def do_destroy(self, line):
+        """removes a class instance from a json file
+
+        Args:
+            line (string): id of the instance to be deleted
+        """
         if os.path.isfile(self.path) and self.path.endswith(".json"):
             with open(self.path, "r+") as file:
                 instances = json.load(file)
