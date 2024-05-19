@@ -4,7 +4,6 @@ import ast
 from datetime import datetime
 
 
-
 class FileStorage():
     __file_path = "file.json"
     __objects = {}
