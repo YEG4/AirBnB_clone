@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """This module is used for storing class instances in a json file
 """
 import json

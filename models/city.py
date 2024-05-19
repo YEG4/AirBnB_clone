@@ -1,6 +1,7 @@
-'''
+#!/usr/bin/python3
+"""
     This module describes City class
-'''
+"""
 from models.base_model import BaseModel
 
 

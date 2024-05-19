@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """This module has all the classes used in the project
 BaseModel, State, Place, City, User
 """

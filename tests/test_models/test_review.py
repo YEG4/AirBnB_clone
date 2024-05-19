@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """This test file is used to test Review class
 """
 import unittest

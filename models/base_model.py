@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """This file has BaseModel and is inherited by all other classes
 """
 import uuid

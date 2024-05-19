@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Tests use cases  for the class BaseModel
 """
 import unittest

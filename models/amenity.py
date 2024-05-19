@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """This module Has class Amenity
 """
 from models.base_model import BaseModel
