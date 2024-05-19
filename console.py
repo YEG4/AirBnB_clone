@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Console 
+"""
 import cmd
 import json
 import os
