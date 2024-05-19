@@ -1,7 +1,15 @@
+'''
+    This module describes Place class
+'''
 from models.base_model import BaseModel
 
 
 class Place(BaseModel):
+    """This class inherits from BaseModel class.
+
+    Args:
+        BaseModel (class): Base class for all other classes to inherit from
+    """
     name = ''
     city_id = ''
     user_id = ''
